@@ -31,6 +31,8 @@ button.addEventListener('click', () => {
     };
 })
 
+
+//CALCULATION FUNCTIONS
 function hallCalc() {
     const hallTotalCalc = 60000 / bpm.value * 8; 
     hallTotal.innerText = `${hallTotalCalc.toFixed(2)} ms`; 
