@@ -23,10 +23,12 @@ const tightRoomPreDelay = document.getElementById('tight-pd');
 
 //BUTTON CLICK TRIGGERS CALCULATION FUNCTIONS 
 button.addEventListener('click', () => {
+    if (bpm.value) {
     hallCalc(); 
     bigRoomCalc(); 
     smallRoomCalc(); 
     tightAmbienceCalc(); 
+    };
 })
 
 function hallCalc() {
