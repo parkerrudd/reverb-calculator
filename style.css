@@ -15,6 +15,12 @@ header {
     background-color: #fc4445;
 }
 
+@media screen and (max-width: 300px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
 .container {
     display: flex; 
     flex-direction: column;
@@ -31,6 +37,12 @@ header {
     flex-direction: column;
     gap: 15px;
     padding-bottom: 15vh;
+}
+
+@media screen and (max-width: 740px) {
+    .input-container {
+        padding-bottom: 5vh;
+    }
 }
 
 #btn {
@@ -54,15 +66,27 @@ header {
 #table {
     border-collapse: collapse;
     /* margin: 2rem 12rem; */
-    min-width: 90%;
+    /* min-width: 90%; */
     border-radius: 5px 5px 0 0;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     text-align: left;
-    font-size: 1rem;
+    font-size: 1em;
+    max-width: 70vw;
 }
 
 #table thead tr {
     font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 585px) {
+    #table {
+        font-size: 10px;
+    }
+
+    #table thead tr {
+        font-size: 1.2em;
+    }
 }
 
 #table th, 
